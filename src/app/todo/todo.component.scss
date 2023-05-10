@@ -1,0 +1,23 @@
+@import "bootstrap/scss/bootstrap";
+
+.todo-wrap {
+  .todo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      margin-right: 10px;
+      font-size: 16px;
+      width: 200px;
+    }
+
+    .todo-item-wrap {
+      padding: 5px;
+    }
+
+    .todo-btn {
+      margin-left: 10px;
+    }
+  }
+}
