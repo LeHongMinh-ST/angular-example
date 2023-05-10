@@ -1,0 +1,17 @@
+<div class="pokemon-wrap">
+  <div class="pokemon-wrap__header">
+    <h1>Pokemon Evolution</h1>
+  </div>
+
+  <div class="pokemon-wrap__container">
+    <div class="pokemon-wrap__list">
+      <app-pokemon-collection
+        *ngFor="let pokemon of pokemons"
+        [pokemon]="pokemon"
+      ></app-pokemon-collection>
+    </div>
+    <div class="pokemon-wrap__load-more">
+      <button mat-raised-button (click)="loadPokemon()">Load more</button>
+    </div>
+  </div>
+</div>

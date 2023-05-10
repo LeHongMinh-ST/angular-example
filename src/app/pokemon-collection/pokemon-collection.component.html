@@ -1,0 +1,17 @@
+<div class="pokemon-collection-wrap {{ getType()}}" >
+  <div class="pokemon-number">
+    #{{ pokemon.id}}
+  </div>
+
+  <div class="pokemon-image">
+    <img [src]="pokemon.sprites.other.dream_world.front_default" alt="">
+  </div>
+  <div class="pokemon-detail">
+    <div class="pokemon-name">
+      {{ pokemon.name}}
+    </div>
+    <div class="pokemon-type">
+      Type: {{ getType() }}
+    </div>
+  </div>
+</div>
